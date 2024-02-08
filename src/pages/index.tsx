@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div>
       <h1 className='mt-4'>Senpai</h1>
-      <p>Welcome to BYU</p>
+      <p>Welcome to Hawaii</p>
     </div>
   );
 }
