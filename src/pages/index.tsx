@@ -1,8 +1,7 @@
-export default function Home() {
+export default function Hello() {
   return (
     <div>
-      <h1 className='mt-4'>Senpai</h1>
-      <p>Welcome to Senpai</p>
+      <h1 className='mt-4'>Hello World</h1>
     </div>
   );
 }
