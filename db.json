@@ -1,0 +1,91 @@
+{
+  "user": [
+    {
+      "ID": 1,
+      "Name": "山田太郎",
+      "Major": "情報科学",
+      "Company": "株式会社テック",
+      "Industry": "IT",
+      "Contact": "yamada@example.com",
+      "Email": "yamada@example.com",
+      "PasswordHash": "hashed_password_1"
+    },
+    {
+      "ID": 2,
+      "Name": "鈴木一郎",
+      "Major": "ビジネス",
+      "Company": "グローバル企業",
+      "Industry": "マーケティング",
+      "Contact": "suzuki@example.com",
+      "Email": "suzuki@example.com",
+      "PasswordHash": "hashed_password_2"
+    },
+    {
+      "ID": 3,
+      "Name": "佐藤花子",
+      "Major": "デザイン",
+      "Company": "クリエイティブスタジオ",
+      "Industry": "デザイン",
+      "Contact": "sato@example.com",
+      "Email": "sato@example.com",
+      "PasswordHash": "hashed_password_3"
+    }
+  ],
+  "comments": [
+    {
+      "ID": 1,
+      "PostID": 1,
+      "UserID": 2,
+      "Content": "テクノロジーの進化は本当に速いですね。"
+    },
+    {
+      "ID": 2,
+      "PostID": 2,
+      "UserID": 3,
+      "Content": "マーケティングの知識はどの業界にも役立つと思います。"
+    },
+    {
+      "ID": 3,
+      "PostID": 3,
+      "UserID": 1,
+      "Content": "デザインの力を信じています！"
+    }
+  ],
+  "posts": [
+    {
+      "ID": 1,
+      "UserID": 1,
+      "Content": "最新のテクノロジーについて学ぶことは、将来性があると思います。"
+    },
+    {
+      "ID": 2,
+      "UserID": 2,
+      "Content": "マーケティング戦略を学ぶことで、ビジネスの成功につながります。"
+    },
+    {
+      "ID": 3,
+      "UserID": 3,
+      "Content": "デザインは、人々の生活を豊かにする力があります。"
+    }
+  ],
+  "Likes": [
+    {
+      "ID": 1,
+      "UserID": 1,
+      "PostID": 2,
+      "CommentID": null
+    },
+    {
+      "ID": 2,
+      "UserID": 2,
+      "PostID": null,
+      "CommentID": 3
+    },
+    {
+      "ID": 3,
+      "UserID": 3,
+      "PostID": 1,
+      "CommentID": null
+    }
+  ]
+}
