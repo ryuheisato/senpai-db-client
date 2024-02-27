@@ -64,14 +64,14 @@ export default function AlumniListPage() {
               <option key={m} value={m}>{m}</option>
             ))}
           </select>
-          <select value={industry} onChange={(e) => setIndustry(e.target.value)}>
+          <select className="mx-10" value={industry} onChange={(e) => setIndustry(e.target.value)}>
             <option value="">業界を選択</option>
             {industries.map(i => (
               <option key={i} value={i}>{i}</option>
             ))}
           </select>
         </div>
-        <Button className="bg-blue-500" onClick={() => window.location.href='alumni/post'}>投稿する</Button>
+        <Button className="bg-blue-500" onClick={() => window.location.href='alumni/post'}>追加　/　編集</Button>
       </div>
 
       <div className="mx-20">
