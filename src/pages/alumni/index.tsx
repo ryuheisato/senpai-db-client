@@ -1,3 +1,13 @@
+import { Button } from '@/components/ui/button';
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
 import { useEffect, useState } from 'react';
 
 export default function AlmuniListPage() {
@@ -16,17 +26,37 @@ export default function AlmuniListPage() {
 
   return (
     <div>
-      <h1 className='mt-4'>Senpai</h1>
-      <p>先輩リストページ-Shohei</p>
-      {data.map((user: any) => (
-        //モックデータを表示
-        <tr key={user.ID}>
-          <td>{user.ID}</td>
-          <td>{user.Name}</td>
-          <td>{user.Email}</td>
-          <td>{user.Company}</td>
-        </tr>
-      ))}
+      <div className = "flex justify-between mx-auto container">
+      <h1 className='mt-4 my-5 mx-5'>先輩リストページ-Shohei</h1>
+      <Button className="bg-blue-500 my-5 mx-5" onClick={() => window.location.href='alumni/post'}>投稿する</Button>
+      </div>
+
+      <div className="mx-20">
+        <Table>
+            <TableCaption>卒業生リスト</TableCaption>
+              <TableHeader>
+                <TableRow>
+                <TableHead>名前</TableHead>
+                <TableHead>専攻</TableHead>
+                <TableHead>働いている企業</TableHead>
+                <TableHead>業界</TableHead>
+                <TableHead>連絡先</TableHead>
+                </TableRow>
+              </TableHeader>
+            <TableBody>
+              {data.map((user: any) => (
+              //モックデータを表示
+              <TableRow key={user.ID}>
+                <TableCell>{user.Name}</TableCell>
+                <TableCell>{user.Major}</TableCell>
+                <TableCell>{user.Company}</TableCell>
+                <TableCell>{user.Industry}</TableCell>
+                <TableCell>{user.Email}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+        </Table>
+      </div>  
     </div>
   );
 }
