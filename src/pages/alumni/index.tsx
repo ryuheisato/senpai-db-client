@@ -71,14 +71,14 @@ export default function AlumniListPage() {
             ))}
           </select>
         </div>
-        <Button className="bg-blue-500" onClick={() => window.location.href='alumni/post'}>追加　/　編集</Button>
+        <Button className="bg-blue-500" onClick={() => window.location.href='alumni/post'}>追加</Button>
       </div>
 
       <div className="mx-20">
 
         {/* Table */}
         <Table>
-          <TableCaption>卒業生リスト</TableCaption>
+          {/* <TableCaption>卒業生リスト</TableCaption> */}
           <TableHeader>
             <TableRow>
               <TableHead>名前</TableHead>
@@ -96,6 +96,8 @@ export default function AlumniListPage() {
                 <TableCell>{user.Company}</TableCell>
                 <TableCell>{user.Industry}</TableCell>
                 <TableCell>{user.Contact}</TableCell> {/* Assuming your user object has a Contact field */}
+                if{}
+                <TableCell><Button>編集</Button></TableCell>
               </TableRow>
             ))}
           </TableBody>
